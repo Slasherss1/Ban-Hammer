@@ -4,7 +4,7 @@ exports.do = () => {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania wiadomościami.");
       console.log("Użytkownik nie mam uprawnień");
       return;
-    } else if (!message.channel.permissionsFor(bot.user).hasPermission("MANAGE_MESSAGES")) {
+    } else if (!message.channel.permissionsFor(client.user).hasPermission("MANAGE_MESSAGES")) {
       message.channel.sendMessage("Nie mam uprawniń do zarządzania wiadomościami.");
       console.log("Nie mam uprawnień do zarządzania wiadomościami.");
       return;
