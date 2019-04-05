@@ -1,0 +1,22 @@
+{
+  "name": "ban-hammer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slasherss1/Ban-Hammer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slasherss1/Ban-Hammer/issues"
+  },
+  "homepage": "https://github.com/Slasherss1/Ban-Hammer#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
