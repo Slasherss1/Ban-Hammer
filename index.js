@@ -13,7 +13,7 @@ client.on("message", message => {
   })
 
   function loadcommand(file) {
-    require('./funs/' + file).do(msg)
+    require('./funs/' + file).do()
   }
 })
 

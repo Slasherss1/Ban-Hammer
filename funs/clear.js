@@ -1,4 +1,4 @@
-exports.do() = function() => {
+exports.do = () => {
   if (msg.content == "!clear") {
     if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_MESSAGES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania wiadomościami.");
