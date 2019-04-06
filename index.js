@@ -10,6 +10,7 @@ client.on("ready", () => {
 })
 
 client.on("message", message => {
+  if (!message.guild) return;
   global.message = message
   if(message.author.bot) return;
   fs.readdir('./funs/', (err, files) => {
