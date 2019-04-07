@@ -1,4 +1,4 @@
-exports.do = () => {
+exports.do = async function() => {
   //Muting
   if (message.content.startsWith(`!mute`)) {
     if (!message.channel.permissionsFor(message.author).has("MANAGE_ROLES")) {

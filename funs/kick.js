@@ -1,4 +1,4 @@
-exports.do = () => {
+exports.do = async function() => {
   if (message.content.startsWith(`!kick`)) {
     if (!message.channel.permissionsFor(message.author).has("KICK_MEMBERS")) {
       message.channel.sendMessage("Nie masz uprawnień do wyrzucania.");

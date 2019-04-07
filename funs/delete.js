@@ -1,4 +1,4 @@
-exports.do = () => { /*
+exports.do = async function() => { /*
   if (message.content == "!delete") {
     if (!message.channel.permissionsFor(message.author).has("MANAGE_MESSAGES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania wiadomościami.");
