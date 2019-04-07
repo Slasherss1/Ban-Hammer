@@ -3,11 +3,9 @@ exports.do = () => {
   if (message.content.startsWith(`!mute`)) {
     if (!message.channel.permissionsFor(message.author).has("MANAGE_ROLES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania rolami.");
-      console.log("Użytkownik nie ma uprawnień");
       return;
     } else if (!message.channel.permissionsFor(client.user).has("MANAGE_ROLES")) {
       message.channel.sendMessage("Nie mam uprawniń do zarządzania rolami.");
-      console.log("Nie mam uprawnień do zarządzania rolami.");
       return;
     }
     const user = message.mentions.users.first();
