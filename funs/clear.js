@@ -15,4 +15,4 @@ exports.do = () => {
         console.log('Error while doing Bulk Delete');
         console.log(err);
       })}
-}}}
+}}
