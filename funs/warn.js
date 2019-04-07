@@ -10,11 +10,7 @@ exports.do = () => {
     const user = message.mentions.users.first();
     if (user) {
       const hook = new Discord.WebhookClient(config.hook.id, config.hook.token)
-      let embed = new Discord.RichEmbed()
-			   .setAuthor(message.author.tag)
-			   .setTitle('Warn')
-			   .addField("Content", message.content.slice(6, message.content.length))
-			   .setColor('#ff270f')
+      let embed = new Discord.RichEmbed().setAuthor(message.author.tag).setTitle('Warn').addField("Content", message.content.slice(6, message.content.length)).setColor('#ff270f')
       hook.send(embed)
     } else {
       message.reply(`Nie powiedziałeś kogo upomnieć`)
