@@ -11,11 +11,9 @@ exports.do = () => {
     }
 
     if (message.channel.type == 'text') {
-      message.channel.fetchMessages()
-      .then(messages => {
-        message.channel.bulkDelete(messages);
-        messagesDeleted = messages.array().length;
-      })
+        message.delete()
+        message.channel.bulkDelete().then(messages => message.reply(`Usunięto ${messages.size} wiadomości.`).delete(10))
+      }
       .catch(err => {
         console.log('Error while doing Bulk Delete');
         console.log(err);
