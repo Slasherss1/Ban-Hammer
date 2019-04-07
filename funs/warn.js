@@ -1,5 +1,6 @@
 exports.do = () => {
   if (message.content.startsWith(`!warn`)) {
+    message.delete()
     if (!message.channel.permissionsFor(message.author).has("MANAGE_MESSAGES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania wiadomościami.");
       return;
