@@ -1,4 +1,4 @@
-exports.do = () => {
+exports.do = () => {/*
   if (message.content == "!clear") {
     if (!message.channel.permissionsFor(message.author).has("MANAGE_MESSAGES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania wiadomościami.");
@@ -10,9 +10,11 @@ exports.do = () => {
 
     if (message.channel.type == 'text') {
         message.delete()
-        message.channel.bulkDelete().then(messages => message.reply(`Usunięto ${messages.size} wiadomości.`).delete(1500))
+        message.channel.fetchMessages().then(messages => {
+          message.channel.bulkDelete(messages)
+        })
       .catch(err => {
         console.log('Error while doing Bulk Delete');
         console.log(err);
       })}
-}}
+}*/}
