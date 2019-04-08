@@ -1,4 +1,4 @@
-exports.do = async function() => {
+exports.do = async function() {
   if (message.content.startsWith(`!warn`)) {
     message.delete()
     if (!message.channel.permissionsFor(message.author).has("MANAGE_MESSAGES")) {

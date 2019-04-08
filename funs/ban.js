@@ -1,4 +1,4 @@
-exports.do = async function() => {
+exports.do = async function() {
   if (message.content.startsWith(`!ban`)) {
     if (!message.channel.permissionsFor(message.author).has("BAN_MEMBERS")) {
       message.channel.sendMessage("Nie masz uprawnień do banowania.");

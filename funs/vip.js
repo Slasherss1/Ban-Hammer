@@ -1,4 +1,4 @@
-exports.do = async function() => {
+exports.do = async function() {
   //Vip
   if (message.content.startsWith(`!vip`)) {
     if (!message.channel.permissionsFor(message.author).has("MANAGE_ROLES")) {
