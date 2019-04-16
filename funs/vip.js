@@ -1,6 +1,6 @@
 exports.do = async function() {
   //Vip
-  if (message.content.startsWith(`!vip`)) {
+  if (message.content.startsWith(`${config.prefix}vip`)) {
     if (!message.channel.permissionsFor(message.author).has("MANAGE_ROLES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania rolami.");
       return;
@@ -23,7 +23,7 @@ exports.do = async function() {
     }
   }
   //UnVip
-  if (message.content.startsWith(`!unvip`)) {
+  if (message.content.startsWith(`${config.prefix}unvip`)) {
     if (!message.channel.permissionsFor(message.author).has("MANAGE_ROLES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania rolami.");
       console.log("Użytkownik nie ma uprawnień");

@@ -1,6 +1,6 @@
 exports.do = async function() {
   //Muting
-  if (message.content.startsWith(`!mute`)) {
+  if (message.content.startsWith(`${config.prefix}mute`)) {
     if (!message.channel.permissionsFor(message.author).has("MANAGE_ROLES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania rolami.");
       return;
@@ -23,7 +23,7 @@ exports.do = async function() {
     }
   }
   //Unmuting
-  if (message.content.startsWith(`!unmute`)) {
+  if (message.content.startsWith(`${config.prefix}unmute`)) {
     if (!message.channel.permissionsFor(message.author).has("MANAGE_ROLES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania rolami.");
       console.log("Użytkownik nie ma uprawnień");

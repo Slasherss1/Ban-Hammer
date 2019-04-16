@@ -1,5 +1,5 @@
 exports.do = async function() {
-  if (message.content.startsWith(`!warn`)) {
+  if (message.content.startsWith(`${config.prefix}warn`)) {
     message.delete()
     if (!message.channel.permissionsFor(message.author).has("MANAGE_MESSAGES")) {
       message.channel.sendMessage("Nie masz uprawnień do zarządzania wiadomościami.");
