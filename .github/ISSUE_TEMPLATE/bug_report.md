@@ -3,7 +3,7 @@ name: Bug report
 about: Create bug report to help me make bot work better.
 title: ''
 labels: bug
-assignees: ''
+assignees: Slasherss1
 
 ---
 
